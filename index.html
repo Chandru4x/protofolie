@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090806">
+  <title>Chandru — UI/UX & 3D Designer</title>
+  <meta name="description" content="Chandru is a UI/UX and visual designer creating thoughtful digital experiences and expressive 3D work.">
+  <meta property="og:title" content="Chandru — UI/UX & 3D Designer">
+  <meta property="og:description" content="Digital experiences with depth.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Chandru, home"><span data-name>Chandru</span><i aria-hidden="true">.</i></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Theme</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+    <a href="#work">Selected work <span>01</span></a><a href="#about">About <span>02</span></a><a href="#services">Services <span>03</span></a><a href="#contact">Contact <span>04</span></a>
+    <div class="mobile-menu-note">UI/UX · VISUAL DESIGN · 3D</div>
+  </nav>
+
+  <main id="main">
+    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="eyebrow-line"></span> UI/UX & visual designer <span class="eyebrow-dot">·</span> 3D</p>
+        <h1 class="hero-title reveal" id="hero-title">Digital<br>experiences<br>with <em>depth.</em></h1>
+        <p class="hero-intro reveal">I’m <span data-name>Chandru</span> — creating intuitive interfaces and expressive visual worlds, with thoughtful design and a 3D point of view.</p>
+        <div class="hero-links reveal">
+          <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-status reveal"><span class="status-mark" aria-hidden="true"></span><span><b>Availability</b> <span data-availability>[Add your availability]</span></span><span class="status-divider">/</span><span>Design practice</span></div>
+      </div>
+      <div class="hero-visual reveal" data-tilt aria-label="Abstract 3D-inspired form study">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="hero-object">
+          <svg viewBox="0 0 600 650" role="img" aria-labelledby="orb-title orb-desc">
+            <title id="orb-title">A sculptural 3D-inspired orb</title>
+            <desc id="orb-desc">A warm, dimensional abstract object formed from layered, translucent curves.</desc>
+            <defs>
+              <radialGradient id="orbBase" cx="35%" cy="28%" r="78%"><stop offset="0" stop-color="#f2d8bd"/><stop offset=".24" stop-color="#bd8058"/><stop offset=".57" stop-color="#6d3f2b"/><stop offset=".82" stop-color="#291b16"/><stop offset="1" stop-color="#100d0b"/></radialGradient>
+              <linearGradient id="orbSheen" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#fff5e9" stop-opacity=".68"/><stop offset=".35" stop-color="#edb38c" stop-opacity=".1"/><stop offset=".72" stop-color="#5a3127" stop-opacity=".05"/><stop offset="1" stop-color="#f2d8bd" stop-opacity=".28"/></linearGradient>
+              <linearGradient id="orbLine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d7bd" stop-opacity=".64"/><stop offset=".48" stop-color="#b66b46" stop-opacity=".12"/><stop offset="1" stop-color="#f3c9a8" stop-opacity=".47"/></linearGradient>
+              <filter id="orbBlur"><feGaussianBlur stdDeviation="22"/></filter>
+              <clipPath id="orbClip"><circle cx="300" cy="290" r="202"/></clipPath>
+            </defs>
+            <ellipse cx="300" cy="533" rx="168" ry="29" fill="#bd8058" opacity=".16" filter="url(#orbBlur)"/>
+            <ellipse cx="300" cy="524" rx="153" ry="20" fill="#060504" opacity=".72"/>
+            <g class="orb-sphere">
+              <circle cx="300" cy="290" r="202" fill="url(#orbBase)"/>
+              <g clip-path="url(#orbClip)" fill="none" stroke="url(#orbLine)" stroke-width="1.35">
+                <ellipse cx="300" cy="290" rx="202" ry="74"/><ellipse cx="300" cy="290" rx="202" ry="125"/><ellipse cx="300" cy="290" rx="202" ry="174"/>
+                <ellipse cx="300" cy="290" rx="64" ry="202"/><ellipse cx="300" cy="290" rx="116" ry="202"/><ellipse cx="300" cy="290" rx="166" ry="202"/>
+                <path d="M102 270c37 111 159 186 310 177M126 189c92 52 194 55 334 7M110 355c119-73 253-78 377-32M164 128c41 114 39 213-9 319M375 94c-33 126-31 252 20 389"/>
+              </g>
+              <circle cx="300" cy="290" r="202" fill="url(#orbSheen)"/>
+              <path d="M178 141c33-34 73-51 121-55" fill="none" stroke="#fff1df" stroke-opacity=".78" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="300" cy="290" r="202" fill="none" stroke="#f9e4d0" stroke-opacity=".34"/>
+            </g>
+          </svg>
+        </div>
+        <div class="visual-caption"><span>FORM STUDY</span><span>001 / 3D</span></div>
+        <span class="visual-coordinate coordinate-a">FIG. 01</span><span class="visual-coordinate coordinate-b">OBJECT / 01</span>
+      </div>
+      <a class="scroll-cue" href="#work"><span class="scroll-cue-line"></span> Scroll to explore</a>
+      <span class="hero-index" aria-hidden="true">01 — 05</span>
+    </section>
+
+    <section class="work-section section-wrap section-pad" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> A selection of practice</p><h2 id="work-title">Selected <em>work</em></h2></div>
+        <p class="section-note">Interfaces, systems and visual experiments — shaped around people, made with care.</p>
+      </div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      <p class="placeholder-note"><span aria-hidden="true">✳</span> Project names, descriptions and visuals are editable placeholders. Replace them with your own work before publishing.</p>
+    </section>
+
+    <section class="statement-section section-wrap" aria-label="Design statement">
+      <div class="statement-rule"></div>
+      <p class="statement-label eyebrow reveal">A considered approach</p>
+      <p class="statement reveal">Good design makes the complex feel <em>natural</em> — and the familiar feel a little more <em>alive.</em></p>
+      <div class="statement-bottom"><span>UI/UX · VISUAL DESIGN · 3D</span><span>THOUGHTFUL BY DESIGN <b>✳</b></span></div>
+    </section>
+
+    <section class="about-section section-wrap section-pad" id="about" aria-labelledby="about-title">
+      <div class="about-aside reveal"><p class="eyebrow"><span class="eyebrow-line"></span> A little about me</p><span class="about-index">02<br><span>—</span><br>05</span></div>
+      <div class="about-main reveal">
+        <h2 id="about-title">Hello, I’m <em data-name>Chandru</em>.</h2>
+        <p class="about-lead">A UI/UX and visual designer with a love for the space where useful interfaces meet expressive form.</p>
+        <p class="about-copy">I bring ideas to life across product experiences, visual systems and 3D. I care about making digital products clear to use, considered in every detail, and memorable in how they feel.</p>
+        <div class="about-principles">
+          <div><span>01</span><h3>Clarity first</h3><p>Make every interaction feel intuitive and purposeful.</p></div>
+          <div><span>02</span><h3>Form with feeling</h3><p>Give visual character a meaningful place in the experience.</p></div>
+          <div><span>03</span><h3>Details matter</h3><p>Refine the small moments that make a product feel complete.</p></div>
+        </div>
+        <p class="editable-note">Personal bio and portrait can be added here when ready.</p>
+      </div>
+      <div class="about-portrait reveal" aria-label="Portrait placeholder">
+        <div class="portrait-shape"><span>C</span></div><div class="portrait-label"><span>PORTRAIT</span><span>[ADD IMAGE]</span></div>
+      </div>
+    </section>
+
+    <section class="services-section section-wrap section-pad" id="services" aria-labelledby="services-title">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> What I can help with</p><h2 id="services-title">Made for <em>meaning.</em></h2></div><p class="section-note">A flexible design practice, from the first question through to the final detail.</p></div>
+      <div class="service-list" id="service-list"></div>
+    </section>
+
+    <section class="process-section section-wrap section-pad" id="process" aria-labelledby="process-title">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> From idea to outcome</p><h2 id="process-title">The way I <em>work.</em></h2></div><p class="section-note">A clear, collaborative rhythm leaves room for exploration and keeps the work moving forward.</p></div>
+      <ol class="process-list" id="process-list"></ol>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="contact-content reveal"><p class="eyebrow"><span class="eyebrow-line"></span> Have something in mind?</p><h2 id="contact-title">Let’s make<br>something <em>matter.</em></h2><p class="contact-note">For thoughtful collaborations, new projects, or a good design conversation.</p>
+        <a class="contact-email" data-email-link href="mailto:chandruraja467@gmail.com"><span data-email>chandruraja467@gmail.com</span><span aria-hidden="true">↗</span></a>
+        <a class="button button-primary contact-button" data-email-link href="mailto:chandruraja467@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="contact-index">05 — 05</span>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#top"><span data-name>Chandru</span><i aria-hidden="true">.</i></a><p>UI/UX & 3D designer<br><span>VISUAL DESIGN · DIGITAL EXPERIENCES</span></p><div class="footer-links"><a data-email-link href="mailto:chandruraja467@gmail.com">Email ↗</a><a href="#top">Back to top ↑</a></div><div class="footer-bottom"><span>© <span data-year>2026</span> <span data-name>Chandru</span></span><span>DESIGNED WITH INTENTION <b>✳</b></span></div></footer>
+</body>
+</html>
